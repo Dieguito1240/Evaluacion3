@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <h2>Ejercicio 1: Notas y asistencia</h2>
+    <form action="/procesar1" method="post">
+    Nota 1: <input type="number" name="nota1" step="any" required><br>
+    Nota 2: <input type="number" name="nota2" step="any" required><br>
+    Nota 3: <input type="number" name="nota3" step="any" required><br>
+    Asistencia (%): <input type="number" name="asistencia" step="any" required><br>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>

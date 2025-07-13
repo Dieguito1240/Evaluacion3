@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <h2>Ejercicio 2: Nombres</h2>
+<form action="/procesar2" method="post">
+    Nombre 1: <input type="text" name="nombre1" required><br>
+    Nombre 2: <input type="text" name="nombre2" required><br>
+    Nombre 3: <input type="text" name="nombre3" required><br>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
